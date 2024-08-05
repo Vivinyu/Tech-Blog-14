@@ -8,4 +8,9 @@
   <div class="content">
     {{content}}
   </div>
+  {{#if (gt comments.length 0)}}
+  <div class="comments-info">
+    {{format_plural "Comment" comments.length}}: {{comments.length}}
+  </div>
+  {{/if}}
 </article>

@@ -14,7 +14,7 @@
 
   {{#if comments.length}}
   <div class="comments">
-    <h3>Comments:</h3>
+    <h3>{{format_plural "Comment" comments.length}}:</h3>
     {{#each comments as |comment|}}
     <div class="comment">
       <p>{{comment.content}}</p>
